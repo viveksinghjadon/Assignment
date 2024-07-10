@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success!</title>
+    <link rel="stylesheet" type="text/css" href="/static/success.css">
+</head>
+<body>
+    <h1>Details successfully submitted</h1>
+    <p>Your details are:</p>
+    <ul>
+        {% for user in users %}
+        <li>Name: {{user.name}}, Email: {{user.email}}</li>
+        {% endfor %}
+    </ul>
+    <div>
+        <label>Click Here for Next</label>
+        <button type="button" onclick="location.href='http://127.0.0.1:4444/index/'">Next</button>
+    </div>
+</body>
+</html>
